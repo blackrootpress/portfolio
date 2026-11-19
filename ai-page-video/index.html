@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Create a Page with an AI Assistant · Luke Allis</title>
+<meta name="description" content="Video tutorial: creating a SitecoreAI page with an AI assistant, by Luke Allis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<style>
+.back{display:inline-block;margin-top:clamp(36px,6vw,56px);font-family:var(--mono);font-size:14px;color:var(--sand);text-decoration:none}
+.back:hover{color:var(--paper);text-decoration:underline;text-underline-offset:4px}
+.hero{padding-top:clamp(28px,5vw,48px)}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));border-top:2px solid var(--paper);border-bottom:1px dashed var(--muted);margin:0;padding:0;list-style:none}
+.facts li{padding:16px 16px 14px 0;font-size:14.5px;color:var(--sand)}
+.facts b{display:block;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--umber);margin-bottom:4px}
+.player{border:2px solid var(--paper);box-shadow:6px 6px 0 #000;background:#000}
+.player-bar{padding:10px 14px;background:var(--bark);border-bottom:2px solid var(--paper);font-family:var(--mono);font-size:13px;color:var(--sand)}
+.prose>*{max-width:680px}
+.prose p{color:var(--sand)}
+.next{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;align-items:center}
+.player video{display:block;width:100%;height:auto;background:#000}
+.steps4{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));border-top:2px solid var(--paper)}
+.steps4 li{padding:20px 18px 18px 0;border-bottom:1px dashed var(--muted)}
+.steps4 .n{display:block;font-family:var(--mono);color:var(--umber);font-size:13px;margin-bottom:6px;letter-spacing:.1em}
+.steps4 p{font-size:14.5px;color:var(--sand);line-height:1.6;margin:8px 0 0}
+.stills{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;margin-top:8px}
+.stills figure{margin:0}
+.stills img{display:block;width:100%;height:auto;border:2px solid var(--paper);box-shadow:5px 5px 0 #000}
+.stills figcaption{margin-top:12px;font-family:var(--mono);font-size:13px;color:var(--sand)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav aria-label="Main">
+      <a class="mark" href="../">Luke Allis<span>.</span></a>
+      <ul>
+        <li><a href="../#work">Work</a></li>
+        <li><a href="../#experience">Experience</a></li>
+        <li><a href="../#about">About</a></li>
+        <li><a href="../#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <a class="back" href="../#work">← All work</a>
+  </div>
+
+  <div class="wrap hero">
+    <p class="kicker">Video · Software tutorial · 3 min</p>
+    <h1>Create a page with an <span>AI assistant.</span></h1>
+    <p class="lede">A three-minute tutorial showing marketers how to connect an AI assistant to SitecoreAI, describe a page in plain language, and review the draft it builds, all without leaving their own content.</p>
+    <ul class="facts">
+      <li><b>Audience</b>Marketers &amp; content authors</li>
+      <li><b>My role</b>Script, storyboard &amp; production</li>
+      <li><b>Format</b>Narrated screen recording + motion graphics</li>
+      <li><b>Length</b>2:57</li>
+    </ul>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <p class="kicker">Watch</p>
+      <h2>The video</h2>
+      <div class="player">
+        <div class="player-bar">Create a page with an AI assistant</div>
+        <video controls preload="metadata" poster="poster.jpg" playsinline>
+          <source src="create-page-with-ai-assistant.mp4" type="video/mp4">
+          Your browser can't play this video. <a href="create-page-with-ai-assistant.mp4">Download it instead</a>.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="kicker">The framework</p>
+      <h2>Four steps, one mental model</h2>
+      <p style="max-width:680px;color:var(--sand)">Before any clicking, the video introduces a simple four-step model. Learners get the whole journey up front, then watch each step in action, so the details have something to attach to.</p>
+      <ol class="steps4">
+        <li><span class="n">01 · Connect</span><h3>Link the assistant</h3><p>Connect the assistant to SitecoreAI and set tool permissions, so it works with real content.</p></li>
+        <li><span class="n">02 · Ask</span><h3>Plain language</h3><p>Brief it like a colleague: look up the product pages, then ask for a new landing page.</p></li>
+        <li><span class="n">03 · Act</span><h3>Build the draft</h3><p>The assistant picks the right SitecoreAI tools, creates the page, and fills in its fields.</p></li>
+        <li><span class="n">04 · Review</span><h3>Stay in control</h3><p>Open the draft in the page builder, check it, refine it, and decide what happens next.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="kicker">Design choices</p>
+      <h2>Built for busy marketers</h2>
+      <div class="stills">
+        <figure><img src="framework.jpg" alt="Animated framework: Connect, Ask, Act, Review" loading="lazy"><figcaption>An advance organizer: the whole process before the details</figcaption></figure>
+        <figure><img src="result.jpg" alt="The finished draft landing page open in the SitecoreAI page builder" loading="lazy"><figcaption>It ends on a real, reviewable result, not on a prompt</figcaption></figure>
+      </div>
+      <div class="prose" style="margin-top:34px">
+        <p>The video stays under three minutes and follows one realistic task from start to finish: launching a page for a new electric vehicle. Short enough to watch at the moment of need, specific enough to copy.</p>
+        <p>It also models good habits along with the steps. Permissions are set on purpose, the assistant's work is checked rather than trusted blindly, and a person makes the final decision.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap next">
+      <a class="btn alt" href="../#work">← Back to all work</a>
+      <a class="btn" href="../sitecoreai-intro/">Next: Introduction to SitecoreAI →</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <b>Luke Allis, MBA, PMP</b> · Instructional Design &amp; Learning Programs<br>
+    Portland, Oregon
+  </div>
+</footer>
+
+</body>
+</html>

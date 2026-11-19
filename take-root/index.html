@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Take Root · Luke Allis</title>
+<meta name="description" content="Case study: Take Root, a self-directed creative prompt generator designed by Luke Allis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<style>
+.back{display:inline-block;margin-top:clamp(36px,6vw,56px);font-family:var(--mono);font-size:14px;color:var(--sand);text-decoration:none}
+.back:hover{color:var(--paper);text-decoration:underline;text-underline-offset:4px}
+.hero{padding-top:clamp(28px,5vw,48px)}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));border-top:2px solid var(--paper);border-bottom:1px dashed var(--muted);margin:0;padding:0;list-style:none}
+.facts li{padding:16px 16px 14px 0;font-size:14.5px;color:var(--sand)}
+.facts b{display:block;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--umber);margin-bottom:4px}
+.demo{border:2px solid var(--paper);box-shadow:6px 6px 0 #000;background:#F3EBDD}
+.demo iframe{display:block;width:100%;height:min(820px,90vh);border:0}
+.demo-bar{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 14px;background:var(--bark);border-bottom:2px solid var(--paper);font-family:var(--mono);font-size:13px;color:var(--sand)}
+.demo-bar a{color:var(--umber);font-weight:700}
+.prose>*{max-width:680px}
+.prose p{color:var(--sand)}
+.decisions{list-style:none;margin:0;padding:0;border-top:2px solid var(--paper)}
+.decisions li{display:grid;grid-template-columns:220px 1fr;gap:28px;padding:22px 0;border-bottom:1px dashed var(--muted)}
+.decisions h3{color:var(--paper)}
+.decisions .why{display:block;margin-top:6px;font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--moss)}
+.decisions p{margin:0;font-size:15px;color:var(--sand);line-height:1.65}
+.counts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px}
+.counts div{background:var(--bark);border:1px dashed var(--muted);padding:16px 18px}
+.counts b{display:block;font-family:var(--mono);font-size:30px;font-weight:400;color:var(--umber);line-height:1.1}
+.counts span{font-size:14px;color:var(--sand)}
+.next{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;align-items:center}
+@media (max-width:640px){.decisions li{grid-template-columns:1fr;gap:8px}.demo iframe{height:80vh}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav aria-label="Main">
+      <a class="mark" href="../">Luke Allis<span>.</span></a>
+      <ul>
+        <li><a href="../#work">Work</a></li>
+        <li><a href="../#experience">Experience</a></li>
+        <li><a href="../#about">About</a></li>
+        <li><a href="../#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <a class="back" href="../#work">← All work</a>
+  </div>
+
+  <div class="wrap hero">
+    <p class="kicker">Case study · Interactive tool · Performance support</p>
+    <h1>Take <span>Root.</span></h1>
+    <p class="lede">A creative prompt generator that gets writers and artists past the blank page. People choose how much structure and challenge they want, so the same tool works for a nervous beginner and a practiced artist.</p>
+    <ul class="facts">
+      <li><b>Audience</b>Writers, artists, and anyone who's stuck</li>
+      <li><b>My role</b>Design, writing &amp; development</li>
+      <li><b>Format</b>Single-page web app, mobile-friendly</li>
+      <li><b>Tools</b>HTML, CSS, JavaScript</li>
+    </ul>
+  </div>
+
+  <section id="demo">
+    <div class="wrap">
+      <p class="kicker">Try it</p>
+      <h2>Live demo</h2>
+      <div class="demo">
+        <div class="demo-bar"><span>Take Root · interactive</span><a href="app.html" target="_blank" rel="noopener">Open full screen ↗</a></div>
+        <iframe src="app.html" title="Take Root creative prompt generator" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap prose">
+      <p class="kicker">The problem</p>
+      <h2>Getting started is the hardest part</h2>
+      <p>Most creative people don't lack skill. They get stuck at the start. Generic prompt lists are either too vague to act on or too narrow to fit what the person wants to make, and they give no way to make things harder once you warm up.</p>
+      <p>I wanted a tool that works like a job aid for creative practice: available whenever it's needed, quick to use, and built so the person controls their own level of challenge.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="kicker">Design decisions</p>
+      <h2>How it's built to help</h2>
+      <ol class="decisions">
+        <li>
+          <div><h3>Layered challenge</h3><span class="why">Scaffolding · desirable difficulty</span></div>
+          <p>Every prompt starts as one clear, actionable task. People can then add optional layers: a constraint, a "strange turn," a seasonal lens, or an LGBTQIA+ theme. Difficulty becomes something the learner opts into, not something imposed on them.</p>
+        </li>
+        <li>
+          <div><h3>Learner choice</h3><span class="why">Autonomy · UDL engagement</span></div>
+          <p>People choose a form (fiction, poetry, creative nonfiction, visual art, photography, or mixed media) or select "Surprise me" to get one at random. Their choice of form is remembered for the next visit.</p>
+        </li>
+        <li>
+          <div><h3>Inclusive by design</h3><span class="why">Representation · audience fit</span></div>
+          <p>The LGBTQIA+ constraints are grouped into themes like queer joy, chosen family, and everyday life. They're written so identity is present without being the conflict. One general constraint says this outright: "Do not make the subject's identity the conflict."</p>
+        </li>
+        <li>
+          <div><h3>Low friction</h3><span class="why">Performance support</span></div>
+          <p>There's no account and no setup. People can save favorites on their own device and copy or share a prompt, and the space bar generates a new one. The tool takes seconds to use so the creative work gets the time.</p>
+        </li>
+        <li>
+          <div><h3>Accessible</h3><span class="why">WCAG-minded build</span></div>
+          <p>New prompts and status messages are announced to screen readers through live regions. Every control works with the keyboard and shows a visible focus state, and the layout adapts down to phone screens.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="kicker">Content design</p>
+      <h2>What's inside</h2>
+      <div class="counts">
+        <div><b>180</b><span>original prompts across 6 creative forms</span></div>
+        <div><b>42</b><span>optional constraints</span></div>
+        <div><b>30</b><span>"strange turn" twists</span></div>
+        <div><b>48</b><span>LGBTQIA+ constraints in 8 themes</span></div>
+        <div><b>336</b><span>holiday and seasonal combinations</span></div>
+      </div>
+      <p style="max-width:680px;margin-top:26px;color:var(--sand)">Every prompt is written to be specific enough to act on right away and open enough that two people would make very different work from it. Because each layer is written independently, any constraint or twist can be combined with any prompt.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap next">
+      <a class="btn alt" href="../#work">← Back to all work</a>
+      <a class="btn" href="app.html" target="_blank" rel="noopener">Open Take Root ↗</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <b>Luke Allis, MBA, PMP</b> · Instructional Design &amp; Learning Programs<br>
+    Portland, Oregon
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SitecoreAI Agent Builder Workshop · Luke Allis</title>
+<meta name="description" content="Case study: a hands-on, instructor-led SitecoreAI Agent Builder workshop designed by Luke Allis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<style>
+.back{display:inline-block;margin-top:clamp(36px,6vw,56px);font-family:var(--mono);font-size:14px;color:var(--sand);text-decoration:none}
+.back:hover{color:var(--paper);text-decoration:underline;text-underline-offset:4px}
+.hero{padding-top:clamp(28px,5vw,48px)}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));border-top:2px solid var(--paper);border-bottom:1px dashed var(--muted);margin:0;padding:0;list-style:none}
+.facts li{padding:16px 16px 14px 0;font-size:14.5px;color:var(--sand)}
+.facts b{display:block;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--umber);margin-bottom:4px}
+.player{border:2px solid var(--paper);box-shadow:6px 6px 0 #000;background:#000}
+.player-bar{padding:10px 14px;background:var(--bark);border-bottom:2px solid var(--paper);font-family:var(--mono);font-size:13px;color:var(--sand)}
+.prose>*{max-width:680px}
+.prose p{color:var(--sand)}
+.next{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;align-items:center}
+.arc{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));border-top:2px solid var(--paper)}
+.arc li{padding:20px 18px 18px 0;border-bottom:1px dashed var(--muted)}
+.arc .n{display:block;font-family:var(--mono);color:var(--umber);font-size:13px;margin-bottom:6px}
+.arc p{font-size:14px;color:var(--sand);line-height:1.6;margin:8px 0 0}
+.decisions{list-style:none;margin:0;padding:0;border-top:2px solid var(--paper)}
+.decisions li{display:grid;grid-template-columns:220px 1fr;gap:28px;padding:22px 0;border-bottom:1px dashed var(--muted)}
+.decisions .why{display:block;margin-top:6px;font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--moss)}
+.decisions p{margin:0;font-size:15px;color:var(--sand);line-height:1.65}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.gallery figure{margin:0}
+.gallery a{display:block;border:2px solid var(--paper);box-shadow:5px 5px 0 #000;transition:transform .15s}
+.gallery a:hover,.gallery a:focus-visible{transform:translate(-2px,-2px);outline:none}
+.gallery img{display:block;width:100%;height:auto}
+.gallery figcaption{margin-top:12px;font-family:var(--mono);font-size:13px;color:var(--sand);line-height:1.5}
+.gallery figcaption b{color:var(--umber);font-weight:400}
+.notes{background:var(--bark);border:1px dashed var(--muted);padding:24px 26px;max-width:760px}
+.notes h3{font-size:13px;color:var(--moss);letter-spacing:.1em;margin:0 0 8px}
+.notes p{color:var(--sand);font-size:15px}
+.notes .say{font-style:italic;color:var(--paper);border-left:3px solid var(--umber);padding-left:14px}
+.counts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px;margin-top:34px}
+.counts div{background:var(--bark);border:1px dashed var(--muted);padding:16px 18px}
+.counts b{display:block;font-family:var(--mono);font-size:30px;font-weight:400;color:var(--umber);line-height:1.1}
+.counts span{font-size:14px;color:var(--sand)}
+@media (max-width:640px){.decisions li{grid-template-columns:1fr;gap:8px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav aria-label="Main">
+      <a class="mark" href="../">Luke Allis<span>.</span></a>
+      <ul>
+        <li><a href="../#work">Work</a></li>
+        <li><a href="../#experience">Experience</a></li>
+        <li><a href="../#about">About</a></li>
+        <li><a href="../#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <a class="back" href="../#work">← All work</a>
+  </div>
+
+  <div class="wrap hero">
+    <p class="kicker">Case study · Instructor-led training · Hands-on workshop</p>
+    <h1>SitecoreAI <span>Agent Builder</span> Workshop.</h1>
+    <p class="lede">A five-hour, hands-on virtual workshop that takes marketers and developers from "what's an agent?" to building, testing, and refining their own AI agents in SitecoreAI.</p>
+    <ul class="facts">
+      <li><b>Audience</b>Sitecore customers &amp; partners</li>
+      <li><b>My role</b>Instructional design &amp; facilitator guide</li>
+      <li><b>Format</b>Virtual ILT, labs &amp; breakouts</li>
+      <li><b>Deliverables</b>Instructor deck, notes &amp; lab guide</li>
+    </ul>
+    <div class="counts">
+      <div><b>63</b><span>slides, each with facilitator notes</span></div>
+      <div><b>5</b><span>modules, from concepts to build</span></div>
+      <div><b>4</b><span>agents built and tested in class</span></div>
+      <div><b>186</b><span>page lab guide learners keep</span></div>
+      <div><b>1</b><span>digital badge on completion</span></div>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap prose">
+      <p class="kicker">The challenge</p>
+      <h2>A brand-new capability that moves fast</h2>
+      <p>SitecoreAI's Agent Builder gives teams a lot of options. They can use a prebuilt agent, configure one, duplicate and tailor one, or build their own Standard or Workflow agent. Learners didn't just need to know where the buttons were. They needed to decide which approach fits a real business problem, and to understand that the quality of an agent's output depends on the inputs and context it's given.</p>
+      <p>The workshop also had to run smoothly with different instructors, in different time zones, on live cloud environments where access problems can derail a class in the first ten minutes.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="kicker">Structure</p>
+      <h2>Concept, model, practice, apply</h2>
+      <ol class="arc">
+        <li><span class="n">Module 1</span><h3>Decide</h3><p>An agent decision model, then scenario polls where learners pick the simplest approach that fits the problem.</p></li>
+        <li><span class="n">Module 2</span><h3>Understand inputs</h3><p>What shapes agent output: brand kits, artifacts, skills, and tools, shown through live demos.</p></li>
+        <li><span class="n">Module 3</span><h3>Build Standard</h3><p>The instructor models a build, then learners build and test two Standard agents from real use cases.</p></li>
+        <li><span class="n">Module 4</span><h3>Build Workflow</h3><p>Small groups choose a use case and build, run, review, and refine a multi-step Workflow agent.</p></li>
+        <li><span class="n">Module 5</span><h3>Share &amp; take home</h3><p>Group share-out, plus managing visibility, exporting agents, and cleaning up the environment.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="kicker">Design decisions</p>
+      <h2>Why it's built this way</h2>
+      <ol class="decisions">
+        <li><div><h3>Decisions before clicks</h3><span class="why">Transfer · problem-first</span></div>
+          <p>The workshop opens with a decision model rather than a feature tour. Learners practice choosing an approach on realistic scenarios, explain their reasoning, and learn to pick the simplest option that works, including keeping some steps in human hands.</p></li>
+        <li><div><h3>I do, we do, you do</h3><span class="why">Gradual release · scaffolding</span></div>
+          <p>Each build follows the same arc. The instructor models it, learners build alongside with the lab guide, then small groups build on their own. Support fades as learners gain confidence.</p></li>
+        <li><div><h3>Real use cases</h3><span class="why">Authentic practice</span></div>
+          <p>Every agent comes from a business problem marketers actually have, such as content optimization, persona audits, SEO rewrites, and shopper-persona revisions. Each one is laid out as a business need, what the agent does, what it returns, and how it's configured.</p></li>
+        <li><div><h3>Iteration is the lesson</h3><span class="why">Formative feedback</span></div>
+          <p>Every build ends with a test, review, and refine step. Learners see that a first draft of an agent is rarely the final one, which is the habit they need back on the job.</p></li>
+        <li><div><h3>Built for any instructor</h3><span class="why">Scalable delivery</span></div>
+          <p>All 63 slides have an instructor note and a word-for-word "Say" script, plus fallbacks for when things break, like running the polls in chat if Teams polls fail. Setup checkpoints at the start catch access and license problems before the first build.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="kicker">Inside the deck</p>
+      <h2>Selected slides</h2>
+      <div class="gallery">
+        <figure><a href="slide-1.jpg" target="_blank" rel="noopener"><img src="slide-1.jpg" alt="Slide 1: title slide" loading="lazy"></a><figcaption><b>Slide 1</b> · Title and waiting-room slide, which doubles as an access check</figcaption></figure>
+        <figure><a href="slide-13.jpg" target="_blank" rel="noopener"><img src="slide-13.jpg" alt="Slide 13: Module 1 objectives" loading="lazy"></a><figcaption><b>Slide 13</b> · Module objectives written as observable outcomes</figcaption></figure>
+        <figure><a href="slide-15.jpg" target="_blank" rel="noopener"><img src="slide-15.jpg" alt="Slide 15: types of agents" loading="lazy"></a><figcaption><b>Slide 15</b> · Types of agents: a map learners return to all day</figcaption></figure>
+        <figure><a href="slide-17.jpg" target="_blank" rel="noopener"><img src="slide-17.jpg" alt="Slide 17: Standard vs. Workflow agent" loading="lazy"></a><figcaption><b>Slide 17</b> · A side-by-side comparison that sets up the key decision</figcaption></figure>
+        <figure><a href="slide-21.jpg" target="_blank" rel="noopener"><img src="slide-21.jpg" alt="Slide 21: scenario activity" loading="lazy"></a><figcaption><b>Slide 21</b> · Scenario-based practice: learners vote, then defend their choice</figcaption></figure>
+        <figure><a href="slide-39.jpg" target="_blank" rel="noopener"><img src="slide-39.jpg" alt="Slide 39: use case example" loading="lazy"></a><figcaption><b>Slide 39</b> · Worked example: a real business use case mapped to agent configuration</figcaption></figure>
+        <figure><a href="slide-47.jpg" target="_blank" rel="noopener"><img src="slide-47.jpg" alt="Slide 47: workflow agent walkthrough" loading="lazy"></a><figcaption><b>Slide 47</b> · Step-by-step walkthrough that mirrors the lab guide</figcaption></figure>
+        <figure><a href="slide-60.jpg" target="_blank" rel="noopener"><img src="slide-60.jpg" alt="Slide 60: badge slide" loading="lazy"></a><figcaption><b>Slide 60</b> · Completion with a Credly digital badge</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="kicker">The lab guide</p>
+      <h2>The learner's build path</h2>
+      <div class="prose">
+        <p>The slides run the room. The 186-page lab guide is what learners actually follow while building. It's organized into 10 lessons that mirror the workshop, from environment access through two Standard agent demos and two Workflow agent builds to a wrap-up. The workshop is free and public, and learners keep access after class so they can rebuild the agents on their own.</p>
+        <p>Every build uses the same seven-step loop: start with a use case, choose the approach, configure, run, review, refine, and run again. Each task opens with a four-part brief (business need, what the agent does, what it returns, and how it's configured) before any step-by-step instructions, so learners understand the why before the how. Breakouts get discussion prompts and suggested group roles, and the guide ends with reflection questions about applying agents to the learner's own work.</p>
+      </div>
+      <div class="btns" style="margin-top:26px">
+        <a class="btn" href="agent-builder-lab-guide.pdf" target="_blank" rel="noopener">Open the full lab guide (PDF, 17 MB) ↗</a>
+      </div>
+      <div class="gallery" style="margin-top:34px">
+        <figure><a href="lab-4.jpg" target="_blank" rel="noopener"><img src="lab-4.jpg" alt="Lab guide page 4: How you will work" loading="lazy"></a><figcaption><b>Page 4</b> · A seven-step build loop learners repeat for every agent</figcaption></figure>
+        <figure><a href="lab-41.jpg" target="_blank" rel="noopener"><img src="lab-41.jpg" alt="Lab guide page 41: Task 1, build a Standard agent" loading="lazy"></a><figcaption><b>Page 41</b> · Each task opens with the business need, the job, the output, and the setup</figcaption></figure>
+        <figure><a href="lab-70.jpg" target="_blank" rel="noopener"><img src="lab-70.jpg" alt="Lab guide page 70: How to work as a group" loading="lazy"></a><figcaption><b>Page 70</b> · Guided group discussion and suggested roles for breakouts</figcaption></figure>
+        <figure><a href="lab-102.jpg" target="_blank" rel="noopener"><img src="lab-102.jpg" alt="Lab guide page 102: Workflow canvas" loading="lazy"></a><figcaption><b>Page 102</b> · Concept first, then the steps: the workflow explained before building</figcaption></figure>
+        <figure><a href="lab-186.jpg" target="_blank" rel="noopener"><img src="lab-186.jpg" alt="Lab guide page 186: completion and reflection" loading="lazy"></a><figcaption><b>Page 186</b> · Reflection questions that point learners back to their own work</figcaption></figure>
+        <figure><a href="lab-1.jpg" target="_blank" rel="noopener"><img src="lab-1.jpg" alt="Lab guide page 1: cover and welcome" loading="lazy"></a><figcaption><b>Page 1</b> · Self-paced intro with outcomes, time estimate, and a 10-lesson map</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="kicker">Facilitator guide sample</p>
+      <h2>From the speaker notes</h2>
+      <div class="notes">
+        <h3>Instructor note · Slide 19, scenario activity</h3>
+        <p>The goal of this activity is not only for learners to choose the "right" answer. The more important part is that they explain their reasoning and practice choosing the simplest agent approach that fits the use case.</p>
+        <h3 style="margin-top:18px">Say</h3>
+        <p class="say">There may be some scenarios where more than one answer feels possible. That is okay. The purpose is to practice the reasoning behind the decision.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap next">
+      <a class="btn alt" href="../#work">← Back to all work</a>
+      <a class="btn" href="../ai-page-video/">Next: Create a Page with an AI Assistant →</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <b>Luke Allis, MBA, PMP</b> · Instructional Design &amp; Learning Programs<br>
+    Portland, Oregon
+  </div>
+</footer>
+
+</body>
+</html>
